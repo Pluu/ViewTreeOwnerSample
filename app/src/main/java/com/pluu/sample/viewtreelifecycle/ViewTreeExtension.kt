@@ -1,0 +1,11 @@
+package com.pluu.sample.viewtreelifecycle
+
+import android.view.View
+import androidx.lifecycle.findViewTreeLifecycleOwner
+import androidx.lifecycle.findViewTreeViewModelStoreOwner
+
+fun View.getViewTreeLog() = buildString {
+    append("ViewTreeLifecycleOwner : ${findViewTreeLifecycleOwner()}")
+    append(System.lineSeparator())
+    append("ViewTreeViewModelStoreOwner : ${findViewTreeViewModelStoreOwner()}")
+}
