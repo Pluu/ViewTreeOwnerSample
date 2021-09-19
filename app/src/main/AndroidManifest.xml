@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ViewTreeLifecycleSample.NoActionBar">
-
         <activity android:name=".DemoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,8 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".AActivity"
             android:label="1. Activity Lifecycle">
@@ -32,6 +29,24 @@
         <activity
             android:name=".BActivity"
             android:label="2. Fragment Lifecycle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.pluu.ui.demos.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecyclerViewSample1Activity"
+            android:label="3. Lifecycle in Activity RecyclerView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.pluu.ui.demos.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecyclerViewSample2Activity"
+            android:label="4. Lifecycle in Fragment RecyclerView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
