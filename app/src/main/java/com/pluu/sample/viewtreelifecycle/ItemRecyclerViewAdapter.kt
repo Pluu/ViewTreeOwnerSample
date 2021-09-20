@@ -45,7 +45,7 @@ class ItemRecyclerViewAdapter : RecyclerView.Adapter<ItemRecyclerViewAdapter.Vie
 
         init {
             itemView.doOnAttach {
-                binding.content2.text = itemView.getViewTreeLog()
+                binding.content2.text = itemView.getViewTreeOwnerLog()
                 lifecycleOwner = itemView.findViewTreeLifecycleOwner()
             }
             itemView.doOnDetach {
@@ -56,7 +56,7 @@ class ItemRecyclerViewAdapter : RecyclerView.Adapter<ItemRecyclerViewAdapter.Vie
 
         fun bind(item: String) {
             binding.itemNumber.text = item
-            binding.content1.text = itemView.getViewTreeLog()
+            binding.content1.text = itemView.getViewTreeOwnerLog()
         }
     }
 

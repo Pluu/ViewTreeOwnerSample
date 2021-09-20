@@ -47,7 +47,7 @@
         android:id="@+id/label2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="AttachedToWindow"
+        android:text="Attached"
         android:textStyle="bold" />
 
     <TextView

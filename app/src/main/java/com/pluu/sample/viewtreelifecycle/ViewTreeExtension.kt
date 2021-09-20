@@ -9,3 +9,5 @@ fun View.getViewTreeLog() = buildString {
     append(System.lineSeparator())
     append("ViewTreeViewModelStoreOwner : ${findViewTreeViewModelStoreOwner()}")
 }
+
+fun View.getViewTreeOwnerLog() = "ViewTreeLifecycleOwner : ${findViewTreeLifecycleOwner()}"
